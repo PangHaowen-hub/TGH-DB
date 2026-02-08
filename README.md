@@ -31,7 +31,7 @@ pip install monai nibabel torchio tqdm numpy
 Place your data as follows:
 
 ```
-project_root/
+TGH-DB/
 ├── A4/
 │   ├── train_pairs.txt    # Training pairs (one dict per line)
 │   ├── val_pairs.txt
@@ -54,7 +54,7 @@ project_root/
 Each line in `train_pairs.txt` / `val_pairs.txt` is a Python dict (use `ast.literal_eval` to parse), e.g.:
 
 ```python
-{'t1': 'path/to/t1.nii.gz', 'flair': 'path/to/flair.nii.gz', 'pet': 'path/to/pet.nii.gz', 'subject_id': 'xxx', 'visit': 'bl', 'dataset': 'A4'}
+{'t1': 'path/to/t1.nii.gz', 'flair': 'path/to/flair.nii.gz', 'pet': 'path/to/pet.nii.gz', 'subject_id': 'xxx', 'visit': 'xxx', 'dataset': 'xxx'}
 ```
 
 ## Training
