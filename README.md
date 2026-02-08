@@ -67,7 +67,7 @@ python main_A4.py
 python main_HABS.py
 ```
 
-Outputs are saved under `experiments/A4_APG_DB/` or `experiments/HABS_APG_DB/` with timestamp subfolders, including:
+Outputs are saved under `experiments/A4_TGH_DB/` or `experiments/HABS_TGH_DB/` with timestamp subfolders, including:
 
 - `config.json` – training config
 - `train.log` – training log
