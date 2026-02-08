@@ -34,10 +34,12 @@ Place your data as follows:
 project_root/
 ├── A4/
 │   ├── train_pairs.txt    # Training pairs (one dict per line)
-│   └── val_pairs.txt      # Validation pairs
+│   ├── val_pairs.txt
+│   └── test_pairs.txt
 ├── HABS/
 │   ├── train_pairs.txt
-│   └── val_pairs.txt
+│   ├── val_pairs.txt
+│   └── test_pairs.txt
 └── Template/
     ├── A4_FBP/
     │   ├── Mean.nii.gz    # Population mean template

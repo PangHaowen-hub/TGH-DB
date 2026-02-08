@@ -153,7 +153,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Test Diffusion Bridge model')
     parser.add_argument('--model_path', type=str, default='experiments/A4_TGH_DB/2026-01-12-03-29-30/model_epoch_300.pth', help='Path to model weights')
     parser.add_argument('--config_path', type=str, default='experiments/A4_TGH_DB/2026-01-12-03-29-30/config.json', help='Path to config file')
-    parser.add_argument('--test_txt', type=str, default='A4/val_pairs.txt', help='Path to test data list')
+    parser.add_argument('--test_txt', type=str, default='A4/test_pairs.txt', help='Path to test data list')
     parser.add_argument('--template_dir', type=str, default='Template/A4_FBP', help='Path to template directory')
     parser.add_argument('--batch_size', type=int, default=8, help='batch size')
     
