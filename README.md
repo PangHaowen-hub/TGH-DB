@@ -1,8 +1,5 @@
 # TGH-DB: Template-Guided Heteroscedastic Diffusion Bridge for Brain MRI-to-PET Synthesis
 
-This work proposes **Template-Guided Heteroscedastic Diffusion Bridge (TGH-DB)** for brain MRI-to-PET synthesis. The framework introduces a population-level probabilistic metabolic template (voxel-wise mean and standard deviation) to steer the diffusion process toward a physiologically plausible target distribution. Unlike conventional diffusion models that drift toward an isotropic Gaussian prior, our forward process progressively guides PET signals toward the metabolic template with spatially adaptive, heteroscedastic noise.
-The **Time-Aware Evolutionary Denoiser (TAED)** integrates multimodal MRI (T1 + FLAIR) via parallel encoders, a time-aware fusion mechanism, and a time-modulated decoding pathway.
-
 ## Project Structure
 
 ```
