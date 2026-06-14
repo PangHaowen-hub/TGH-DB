@@ -34,6 +34,17 @@ class DiffusionBridge(nn.Module):
 
 
     @torch.no_grad()
+    def predict_step(self, y_t1, y_fl, mu_atlas, sigma_atlas, model, skip_steps=20):
+        return self.ddim_predict_step(
+            y_t1,
+            y_fl,
+            mu_atlas,
+            sigma_atlas,
+            model,
+            skip_steps=skip_steps,
+        )
+
+    @torch.no_grad()
     def ddim_predict_step(self, y_t1, y_fl, mu_atlas, sigma_atlas, model, skip_steps=20):
         times = list(range(self.n_steps, 0, -skip_steps))
         if times[-1] != 1: times.append(1)

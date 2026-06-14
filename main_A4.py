@@ -101,7 +101,7 @@ def train_and_test(diffusion_bridge, net, trainloader, valloader, optimizer, sav
                     fl_val = normalize(fl_val)
                     sigma_atlas_val = sigma_atlas_val / 0.5
                     
-                    generated_pet = diffusion_bridge.predict_step(t1_val, fl_val, mu_atlas_val, sigma_atlas_val, net)
+                    generated_pet = diffusion_bridge.ddim_predict_step(t1_val, fl_val, mu_atlas_val, sigma_atlas_val, net)
 
                     vis_dir = os.path.join(save_path, f"epoch_{epoch}_vis")
                     os.makedirs(vis_dir, exist_ok=True)
