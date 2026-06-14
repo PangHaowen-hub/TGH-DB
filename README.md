@@ -95,3 +95,17 @@ python test_A4.py --model_path <path_to_model.pth> --config_path <path_to_config
 ```bash
 python test_HABS.py --model_path <path_to_model.pth> --config_path <path_to_config.json> --test_txt HABS/val_pairs.txt --template_dir Template/HABS_FBB --batch_size 8
 ```
+
+## Citation
+
+If you use this code, please cite our paper. Please note that the paper has not yet been indexed or retrieved by academic search databases.
+
+```bibtex
+@inproceedings{pang2026tghdb,
+  title={TGH-DB: Template-Guided Heteroscedastic Diffusion Bridge for Brain MRI-to-PET Synthesis},
+  author={Pang, Haowen and Zhu, Yitao and Fu, Yingji and Ye, Chuyang and Qiu, Anqi},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  year={2026},
+  organization={Springer}
+}
+```
