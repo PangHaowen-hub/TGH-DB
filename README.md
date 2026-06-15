@@ -84,7 +84,7 @@ Outputs are saved under `experiments/A4_TGH_DB/` or `experiments/HABS_TGH_DB/` w
 | `patch_size` | 3D patch size | (224, 224, 224) |
 | `epochs` | Training epochs | 300 |
 
-Our experiments were conducted on 6 NVIDIA H200 GPUs, each with 141GB GPU memory.
+Our experiments were conducted on 8 NVIDIA H200 GPUs, each with 141GB GPU memory.
 
 ## Testing
 
